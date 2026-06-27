@@ -69,6 +69,20 @@
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(84,209,140,.55)}70%{box-shadow:0 0 0 10px rgba(84,209,140,0)}100%{box-shadow:0 0 0 0 rgba(84,209,140,0)}}
   .livebox{background:linear-gradient(180deg,rgba(84,209,140,.08),rgba(84,209,140,.02));border:1px solid #2f6b4c;border-radius:12px;padding:16px 18px;margin:22px 0;color:var(--muted);font-size:14px}
   .livebox b{color:var(--ink)}
+
+  .anniversary{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);border:1px solid #5a4a1f;background:rgba(244,196,83,.08);padding:7px 16px;border-radius:999px;margin-bottom:18px}
+  .gba{
+    margin:6px 0 4px;font-weight:900;letter-spacing:-.01em;line-height:1.02;
+    font-size:clamp(40px,9vw,92px);
+    background:linear-gradient(180deg,#ffffff 0%,#e9eeff 45%,#f4c453 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    text-shadow:0 2px 30px rgba(244,196,83,.18);
+  }
+  .gba .stripe{display:block;height:5px;width:min(420px,70%);margin:16px auto 0;border-radius:4px;
+    background:linear-gradient(90deg,var(--accent) 0 33%,#fff 33% 66%,var(--accent2) 66% 100%)}
+  .creed{max-width:760px;margin:24px auto 0;background:linear-gradient(180deg,rgba(244,196,83,.07),rgba(244,196,83,.02));
+    border:1px solid #5a4a1f;border-radius:14px;padding:20px 22px;color:var(--ink);font-size:17px;line-height:1.6}
+  .creed b{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -76,8 +90,11 @@
 
   <header class="hero">
     <div class="flag">🇺🇸</div>
+    <div class="anniversary">Celebrating 250 Years · 1776 – 2026</div>
+    <div class="gba">God Bless America<span class="stripe"></span></div>
     <h1><span class="sub">World Cup 2026</span>Sorry, America.</h1>
     <p class="lede">Fans from all over the world came for the World Cup — and started filming the United States they actually found. Ranch dressing, yellow school buses, Waffle House at 1 a.m., and a country that felt nothing like the headlines warned them about.</p>
+    <div class="creed">As America approaches its <b>250th birthday</b>, this is a reminder to look around and appreciate what we have. You can argue about politics, complain about the details, and still admit the larger truth: this is an amazing country — still the greatest on earth. The World Cup has given the whole world a fresh look at everyday America. Let their wonder remind us not to tear down what generations built, but to be grateful for it — and worthy of it.</div>
     <div class="live"><span class="dot"></span> Live, auto-updating list · last refreshed <b>2026-06-26</b></div>
     <nav class="jump">
       <a href="#culture">Discovering America</a>
